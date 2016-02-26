@@ -163,10 +163,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\src\main.cpp" />
+    <ClCompile Include="..\src\Window.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\inc\GPUramTest.h" />
     <ClInclude Include="..\inc\RamSizeTest.h" />
+    <ClInclude Include="..\inc\Scene.h" />
+    <ClInclude Include="..\inc\vec.h" />
     <ClInclude Include="..\inc\Window.h" />
     <ClInclude Include="..\inc\WinRenNumTest.h" />
   </ItemGroup>
