@@ -1,7 +1,6 @@
 #pragma once
 #include <SDL/SDL_video.h>
-#include "vec.h"
-#include <SDL/SDL_syswm.h>
+#include <SDL/SDL_render.h>
 
 struct GammaRamp {
 	Uint16 red, green, blue;
@@ -10,13 +9,14 @@ struct GammaRamp {
 class Window {
 
 	SDL_Window*     m_sdlWindow;
+	SDL_Renderer*   m_sdlRenderer;
 
-	const char*     m_title;
+	//const char*     m_title;
 
-	vec<2,int>      m_pos;
-	vec<2,int>      m_size;
-
-	Uint32          m_flags;
+	//int             m_pos[2];
+	int             m_size[2] = {};
+	
+	/*Uint32          m_flags;
 
 	float           m_brightness;
 
@@ -35,11 +35,11 @@ class Window {
 	bool            m_hidden;
 	bool            m_minimized;
 	bool            m_maximized;
-	bool            m_borderless;
+	bool            m_borderless;*/
 
 
 public:
 	Window();
-	bool create(const char* title, vec<2, int> pos, vec<2, int> size, Uint32 flags);
+	bool create(const char* title,int x,int y,int w,int h,Uint32 flags);
 	void destroy();
 };
