@@ -4,22 +4,25 @@
 #include "Window.h"
 #include "Scene.h"
 
-class Game {
+struct Game {
+
 
 	TimeManager time_man;
 	InputManager input_man;
 	Window win;
 	bool quit;
 	Scene* scene;
-public:
-	void start();
-
-	void mainloop();
-
-	/*void input();
-	void update();
-	void render();*/
 
 
 	Game();
+	void start();
+	void mainloop();
+
+	void input(std::vector<SDL_Event>* events);
+	//void update();
+	//void render();
+
+
 };
+
+static Game game;
