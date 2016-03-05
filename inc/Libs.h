@@ -1,6 +1,7 @@
 #pragma once
 
 
-struct Libs {
-static void init();
-};
+namespace Libs {
+	void init();
+	void quit();
+}

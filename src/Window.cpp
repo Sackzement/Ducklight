@@ -20,6 +20,8 @@ bool Window::create(const char* title,int x,int y,int w,int h,Uint32 flags) {
 		return false;
 	}
 
+	pullSize();
+
 	m_sdlRenderer = SDL_GetRenderer(m_sdlWindow);
 	if (m_sdlRenderer) {
 		SDL_DestroyRenderer(m_sdlRenderer);
@@ -45,6 +47,26 @@ void Window::destroy() {
 
 	SDL_DestroyWindow(m_sdlWindow);
 	m_sdlWindow = nullptr;
+}
+
+SDL_Window * Window::getSdlWindow() const
+{
+	return m_sdlWindow;
+}
+
+SDL_Renderer * Window::getSdlRenderer() const
+{
+	return m_sdlRenderer;
+}
+
+void Window::pullSize()
+{
+	SDL_GetWindowSize(m_sdlWindow, &m_size.x, &m_size.y);
+}
+
+Size2<int> Window::getSize() const
+{
+	return m_size;
 }
 
 

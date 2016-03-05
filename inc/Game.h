@@ -7,6 +7,7 @@
 struct Game {
 
 
+
 	TimeManager time_man;
 	InputManager input_man;
 	Window win;
@@ -20,9 +21,10 @@ struct Game {
 
 	void input(std::vector<SDL_Event>* events);
 	//void update();
-	//void render();
+	void render();
 
 
 };
 
-static Game game;
+
+extern Game game;

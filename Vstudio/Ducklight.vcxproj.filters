@@ -36,6 +36,12 @@
     <ClCompile Include="..\src\Scene.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="..\src\HardwareInfo.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\types.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\inc\Window.h">
@@ -48,9 +54,6 @@
       <Filter>inc</Filter>
     </ClInclude>
     <ClInclude Include="..\inc\WinRenNumTest.h">
-      <Filter>inc</Filter>
-    </ClInclude>
-    <ClInclude Include="..\inc\vec.h">
       <Filter>inc</Filter>
     </ClInclude>
     <ClInclude Include="..\inc\Scene.h">
@@ -72,6 +75,24 @@
       <Filter>inc</Filter>
     </ClInclude>
     <ClInclude Include="..\inc\MainMenu.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\HardwareInfo.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\ThreadTest.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\types.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\vec2.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\TemplateTest.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\vec2_DEF.h">
       <Filter>inc</Filter>
     </ClInclude>
   </ItemGroup>
